@@ -173,6 +173,10 @@ This query calculates the average ice thickness and maximum snow accumulation fo
   - Azure Portal
   - Azure Storage Explorer
   - Azure CLI
+ 
+![Accessing stored Data from the Azure portal](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.56.45.png)
+![Accessing stored Data from the Azure portal](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.57.46.png)
+
 
 ---
 
