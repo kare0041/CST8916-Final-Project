@@ -4,12 +4,14 @@ This directory contains the Python script used to simulate IoT sensors for the R
 
 ## Overview
 
-The `simulate_sensors.py` script simulates the behavior of IoT sensors deployed at Dow's Lake, Fifth Avenue, and NAC on the Rideau Canal Skateway. It generates data points for ice thickness, surface temperature, snow accumulation, and external temperature at a regular interval (every 10 seconds) and transmits this data as JSON payloads to Azure IoT Hub.
+The `sensor_simulator.py` script simulates the behavior of IoT sensors deployed at Dow's Lake, Fifth Avenue, and NAC on the Rideau Canal Skateway. It generates data points for ice thickness, surface temperature, snow accumulation, and external temperature at a regular interval (every 10 seconds) and transmits this data as JSON payloads to Azure IoT Hub.
 
 ## Files
 
--   `simulate_sensors.py`: The Python script responsible for simulating sensor data and sending it to Azure IoT Hub.
+-   `sensor_simulator.py`: The Python script responsible for simulating sensor data and sending it to Azure IoT Hub.
+-   `requirements.txt`: This file lists of all the external libraries and packages that the sensor_simulator.py script depends on.
 -   `README.md`: This file, providing information about the sensor simulation script.
+
 
 ## Prerequisites
 
@@ -29,8 +31,8 @@ Before running the script, ensure you have the following:
 
 ## Configuration
 
-1.  **Download the Script:** Download the `simulate_sensors.py` file to your local machine.
-2.  **Update Connection Strings:** Open the `simulate_sensors.py` file in a text editor. Locate the `CONNECTION_STRINGS` dictionary:
+1.  **Download the Script:** Download the `sensor_simulator.py` file to your local machine.
+2.  **Update Connection Strings:** Open the `sensor_simulator.py` file in a text editor. Locate the `CONNECTION_STRINGS` dictionary:
 
     ```python
     CONNECTION_STRINGS = {
@@ -44,18 +46,18 @@ Before running the script, ensure you have the following:
 
 ## Running the Script
 
-1.  **Open a Terminal or Command Prompt:** Navigate to the directory where you saved the `simulate_sensors.py` file.
+1.  **Open a Terminal or Command Prompt:** Navigate to the directory where you saved the `sensor_simulator.py` file.
 2.  **Execute the Script:** Run the script using the Python interpreter:
 
     ```bash
-    python simulate_sensors.py
+    python sensor_simulator.py
     ```
 
 3.  **Observe Output:** The script will start generating and sending sensor data to Azure IoT Hub every 10 seconds. You should see output in the console indicating which location's data is being sent, along with the data payload.  Any errors during sending will also be printed to the console.
 
 ## Script Details
 
-The `simulate_sensors.py` script performs the following actions:
+The `sensor_simulator.py` script performs the following actions:
 
 1.  **Imports Libraries:** Imports necessary Python libraries: `random` for generating random data, `time` for controlling the sending interval, `datetime` for handling timestamps, `json` for formatting data, `os`, and `azure.iot.device`.
 2.  **Defines Connection Strings:** Stores the device connection strings for each simulated sensor in the `CONNECTION_STRINGS` dictionary.  The keys of the dictionary (`"Dow's Lake"`, `"Fifth Avenue"`, `"NAC"`) correspond to the sensor locations and should match the Device IDs in Azure IoT Hub.
