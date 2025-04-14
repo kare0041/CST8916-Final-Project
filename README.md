@@ -187,3 +187,8 @@ The Stream Analytics job calculates:
 {"DeviceId":"sensor_fifth_avenue","location":"Fifth Avenue","avgIceThickness":31.275862068965516,"maxSnowAccumulation":20.0,"EventTime":"2025-04-14T00:50:00.0000000Z"}
 
 ```
+
+## Reflection
+When running the sensor_simulator script for the first time, I faced a TLS certificate verification issue (SSLCertVerificationError), which usually happens on macOS, when the system's certificate store is not available to python. 
+
+In order to fix this issue, I ran the "install certificates" script for Python and included a fix to this issue in the sensor_simulator script; which can be uncommented if the simulator is being run on macOs system.
