@@ -60,6 +60,15 @@ An Azure IoT Hub instance is used to receive data from the simulated sensors.
 
 ---
 
+## Azure Blob Storage
+
+Processed data from Azure Stream Analytics is stored in Azure Blob Storage.
+
+- Data is stored in **JSON format**.
+
+![Blob Storage Output](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.46.16.png)
+
+---
 ## Azure Stream Analytics Job
 
 A Stream Analytics job processes the incoming data in real-time.
@@ -93,16 +102,6 @@ GROUP BY
 This query calculates the average ice thickness and maximum snow accumulation for each location over a 5-minute window.
 ![Azure Stream Analytics Query](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.22.33.png)
 
-
----
-
-## Azure Blob Storage
-
-Processed data from Azure Stream Analytics is stored in Azure Blob Storage.
-
-- Data is stored in **JSON format**.
-
-![Blob Storage Output](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.46.16.png)
 
 ---
 
@@ -151,6 +150,10 @@ Processed data from Azure Stream Analytics is stored in Azure Blob Storage.
 ![Azure IoT Hub devices](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.24.43.png)
 - Retrieve the device connection strings.
 
+#### Azure Blob Storage:
+- Create a **Storage Account** and a **container** to store the processed data.
+![Azure Blog Storage creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.14.42.png)
+
 #### Azure Stream Analytics:
 - Create a Stream Analytics job in the Azure portal.
 - Configure Azure IoT Hub as the **input source**, specifying the consumer group.
@@ -160,9 +163,6 @@ Processed data from Azure Stream Analytics is stored in Azure Blob Storage.
 
 ![Start the Azure Stream Analytics Job](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.41.56.png)
 ![Azure Stream Analytics Job running](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.43.41.png)
-
-#### Azure Blob Storage:
-- Create a **Storage Account** and a **container** to store the processed data.
 
 ---
 
