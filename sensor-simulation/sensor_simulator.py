@@ -32,7 +32,7 @@ def main():
     clients = {location: IoTHubDeviceClient.create_from_connection_string(conn_str)
                for location, conn_str in CONNECTION_STRINGS.items()}
 
-    print("🚀 Starting IoT sensor simulation... Press Ctrl+C to stop.")
+    print("Starting IoT sensor simulation... Press Ctrl+C to stop.")
 
     try:
         while True:
@@ -41,17 +41,17 @@ def main():
                     data = generate_payload(location)
                     message = Message(json.dumps(data))
                     client.send_message(message)
-                    print(f"✅ Sent from {location}: {data}")
+                    print(f"Sent from {location}: {data}")
                 except Exception as e:
-                    print(f"❌ Error sending from {location}: {e}")
+                    print(f"Error sending from {location}: {e}")
             time.sleep(10)
     except KeyboardInterrupt:
-        print("\n🛑 Simulation interrupted by user.")
+        print("\nSimulation interrupted by user.")
     finally:
-        print("🔌 Shutting down clients...")
+        print("Shutting down clients...")
         for client in clients.values():
             client.shutdown()
-        print("✅ All clients disconnected. Goodbye!")
+        print("All clients disconnected. Goodbye!")
 
 if __name__ == "__main__":
     main()
