@@ -64,7 +64,7 @@ An Azure IoT Hub instance is used to receive data from the simulated sensors.
 
 A Stream Analytics job processes the incoming data in real-time.
 
-![Azure Stream Analytics creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.10.34.png)
+![Azure Stream Analytics creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.17.33.png)
 
 - **Input**: Azure IoT Hub is configured as the input source.
  ![Azure Stream Analytics Input](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2018.24.29.png)
