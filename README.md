@@ -65,7 +65,14 @@ An Azure IoT Hub instance is used to receive data from the simulated sensors.
 
 A Stream Analytics job processes the incoming data in real-time.
 
+![Azure Stream Analytics creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.10.34.png)
+
 - **Input**: Azure IoT Hub is configured as the input source.
+ ![Azure Stream Analytics Input](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2018.26.47.png)
+- **Output**: Azure Blob Storage is configured as the output sink.
+
+![Azure Stream Analytics Output](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2018.26.47.png)
+
 - **Query**: The following SQL-like query aggregates data over a 5-minute tumbling window:
 
 ```sql
@@ -85,12 +92,8 @@ GROUP BY
 ```
 
 This query calculates the average ice thickness and maximum snow accumulation for each location over a 5-minute window.
+![Azure Stream Analytics Query](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.22.33.png)
 
-- **Output**: Azure Blob Storage is configured as the output sink.
-
-![Stream Analytics Input](screenshots/stream_analytics_input.png)  
-![Stream Analytics Query](screenshots/stream_analytics_query.png)  
-![Stream Analytics Output](screenshots/stream_analytics_output.png)
 
 ---
 
@@ -152,6 +155,10 @@ Processed data from Azure Stream Analytics is stored in Azure Blob Storage.
 - Configure Azure IoT Hub as the **input source**, specifying the consumer group.
 - Configure Azure Blob Storage as the **output sink**, providing storage account and container details.
 - Write the SQL query (provided above) to **aggregate the data**.
+- Start the Azure Stream Analytics job
+
+![Start the Azure Stream Analytics Job](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.41.56.png)
+![Azure Stream Analytics Job running](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.43.41.png)
 
 #### Azure Blob Storage:
 - Create a **Storage Account** and a **container** to store the processed data.
