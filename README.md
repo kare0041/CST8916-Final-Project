@@ -102,7 +102,7 @@ Processed data from Azure Stream Analytics is stored in Azure Blob Storage.
 
 - Data is stored in **JSON format**.
 
-![Blob Storage Output](screenshots/blob_storage_output.png)
+![Blob Storage Output](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2020.46.16.png)
 
 ---
 
