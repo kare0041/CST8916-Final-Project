@@ -8,8 +8,7 @@ The Rideau Canal Skateway, a historic and world-renowned attraction in Ottawa, r
 
 The system architecture is illustrated below:
 
-[Simulated IoT Sensors] --> Azure IoT Hub --> Azure Stream Analytics --> Azure Blob Storage
-![System Architecture](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-14%20at%2016.50.04.png)
+![System Architecture](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-14%20at%2016.55.05.png)
 1.  **Simulated IoT Sensors:** Python scripts simulate sensors at three locations (Dow's Lake, Fifth Avenue, NAC), generating ice conditions and weather data.
 2.  **Azure IoT Hub:** Ingests the simulated sensor data.
 3.  **Azure Stream Analytics:** Processes the data in real-time, aggregating it over 5-minute windows to calculate average ice thickness and maximum snow accumulation.
