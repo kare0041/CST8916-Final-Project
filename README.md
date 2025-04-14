@@ -68,7 +68,7 @@ A Stream Analytics job processes the incoming data in real-time.
 ![Azure Stream Analytics creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.10.34.png)
 
 - **Input**: Azure IoT Hub is configured as the input source.
- ![Azure Stream Analytics Input](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2018.26.47.png)
+ ![Azure Stream Analytics Input](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2018.24.29.png)
 - **Output**: Azure Blob Storage is configured as the output sink.
 
 ![Azure Stream Analytics Output](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2018.26.47.png)
