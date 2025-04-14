@@ -54,10 +54,9 @@ An Azure IoT Hub instance is used to receive data from the simulated sensors.
   - `sensor_dows_lake`
   - `sensor_fifth_avenue`
   - `sensor_nac`
+![Azure IoT Hub devices](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.24.43.png)
 - Device connection strings are used by the Python script to authenticate and send data.
   
-![Azure IoT Hub creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.10.34.png)
-![Azure IoT Hub devices](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.24.43.png)
 
 ---
 
@@ -144,10 +143,12 @@ Processed data from Azure Stream Analytics is stored in Azure Blob Storage.
 
 #### Azure IoT Hub:
 - Create an Azure IoT Hub instance in the Azure portal.
+![Azure IoT Hub creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.10.34.png)
 - Create three device identities:
   - `sensor_dows_lake`
   - `sensor_fifth_avenue`
   - `sensor_nac`
+![Azure IoT Hub devices](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.24.43.png)
 - Retrieve the device connection strings.
 
 #### Azure Stream Analytics:
