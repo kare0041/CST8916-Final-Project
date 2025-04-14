@@ -55,8 +55,9 @@ An Azure IoT Hub instance is used to receive data from the simulated sensors.
   - `sensor_fifth_avenue`
   - `sensor_nac`
 - Device connection strings are used by the Python script to authenticate and send data.
-
-![IoT Hub Configuration](screenshots/iothub_configuration.png)
+  
+![Azure IoT Hub creation](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.10.34.png)
+![Azure IoT Hub devices](https://github.com/kare0041/CST8916-Final-Project/blob/main/screenshots/Screenshot%202025-04-13%20at%2015.24.43.png)
 
 ---
 
